@@ -5,7 +5,7 @@ services:
     build: ./docker-blog
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./docker-blog/:/code
+      - ./docker-blog:/code
     ports:
       - "8000:8000"
     depends_on:
