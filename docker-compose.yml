@@ -23,7 +23,7 @@ services:
     container_name: react-app-container #4
     image: node:14-alpine #5
     volumes:
-      - ./myapp/:/app #6
+      - ./reduxtk-app:/app #6
     working_dir: /app #7
     command: sh -c "npm install && npm start" #8
     ports:
