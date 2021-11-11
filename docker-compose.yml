@@ -2,10 +2,10 @@ version: "3"
 
 services:
   web:
-    build: ./docker-blog
+    build: ./docker-test-django
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./docker-blog:/code
+      - ./docker-test-django:/code
     ports:
       - "8000:8000"
     depends_on:
